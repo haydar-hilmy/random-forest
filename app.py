@@ -59,17 +59,6 @@ def train_model(X, y):
     return models, accuracies, reports
 
 # Fungsi untuk menampilkan hasil
-# def display_results(accuracies, reports):
-#     st.write("### Akurasi Model")
-#     for drug, accuracy in accuracies.items():
-#         st.write(f"{drug}: {accuracy:.2f}")
-
-#     st.write("### Laporan Klasifikasi")
-#     for drug, report in reports.items():
-#         st.write(f"#### {drug}")
-#         st.json(report)
-
-# Fungsi untuk menampilkan hasil
 def display_results(accuracies, reports, models, X):
     st.write("### Akurasi Model")
     for drug, accuracy in accuracies.items():
